@@ -1,0 +1,301 @@
+/* This centers the name , title and links (used ids) */
+h1, #titre, #web, footer{
+    text-align: center;
+      
+}
+h1{
+    font-size: 45px;
+}
+
+h4, th{
+    font-size: 20px;
+
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Distributed space between flex items */
+  position: relative; /* To allows absolute positioning inside header */
+  text-align: center;
+  height: 300px; /* Adjusted based on  actual content */
+}
+
+/* Rounded headshot */
+#head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: dashed 1px;
+  color: hsl(190, 100%, 50%);
+  border-radius: 50%; /* Makes the image round */
+  width: 250px; 
+  height: 250px; 
+  object-fit: cover; /* Ensured the image covers the area without issues */
+}
+
+#name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centered the name*/
+  margin: 0; /* Removed default margins */
+}
+
+
+#web {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0; /* Removed default margins */
+}
+
+#web a {
+  color: inherit; /* Inherited the text color from the parent element for consistency*/
+  text-decoration: none; /* Removed underline from links */
+}
+
+#web a:hover {
+  text-decoration: underline; /* Added underline on hover */
+}
+
+
+/*Turned the background black and used a font family from google using a font that gives a techie look*/ 
+body{
+    background: black;
+    font-family: 'VT323', monospace, sans-serif;
+    color: hsl(190, 100%, 50%);
+    margin: 3rem;
+    padding: 20px;
+    border: dashed; 
+
+}
+/*Turned second heading all caps and added a shadow to give a matrix vibe look*/
+h2{
+    text-transform: uppercase;
+    text-shadow: 1px 2px rgb(198, 236, 142);
+    font-size: 40px;
+}
+/*Set a distance between text to make it more readable*/
+p {
+    line-height: 1.6;
+  }
+
+  ul, ol{
+    line-height: 1.5;
+  }
+  /* Adjusted hr color to blue and turned it into a dashed line  */
+  hr{
+    border-color:hsl(190, 100%, 50%); 
+    border-style: dashed;
+  }
+
+ 
+
+/* created space between sections top and bottom*/
+  section{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 1px  ; 
+  }
+
+  h1,h2,h3,h4,h5,h6{
+    padding-bottom: 10px;
+  }
+  label>input, select{
+    margin-bottom: 10px;
+    border: dashed 1px;
+    border-color: hsl(190, 100%, 50%); 
+    background-color: black;
+    color:hsl(190, 100%, 50%);
+  }
+  label>input, select{
+    margin-bottom: 10px;
+    border: dashed 1px;
+    background-color: black;
+    color:hsl(190, 100%, 50%);
+  }
+
+  label>input:hover, select:hover{
+    color: hsl(124, 100%, 50%);
+  }
+
+/*Added color to placeholders and an outline to the input field whe it is hovered*/
+  input::placeholder, label>textarea{
+    color:hsla(190, 100%, 50%, 0.674);
+    
+  }
+  input::placeholder:hover{
+    color: hsl(124, 100%, 50%);
+  }
+
+
+  label>textarea{
+    background-color: black;
+    border: dashed 1px;
+  }
+  label>textarea:hover{
+    background-color: black;
+    border: dashed  1px;
+    color: hsl(124, 100%, 50%);
+  }
+
+
+/*Design of the button*/
+  button{
+    background-color:hsl(0, 0%, 0%);
+    color: hsla(190, 100%, 50%);
+    border: solid hsla(190, 100%, 50%);
+    padding: 5px 70px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+
+  button:hover{
+    background-color: hsl(124, 100%, 50%); 
+    color: black;
+    border: solid hsl(124, 100%, 50%);
+  }
+/* 1st Table design*/
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    
+  }
+
+  table thead th{
+    font-size: 18px;
+  }
+/*Tech + Tools desihn*/
+  .technologies, .tools {
+    color: hsla(190, 100%, 50%)
+  
+  }
+
+.tech1{
+    display: inline-block;
+    vertical-align: top;
+    width: 24%; 
+    padding: 0 10px;
+}
+
+.technologies ul, .tools table {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+}
+
+td{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* used a pseudo-element to create a visual space*/
+thead::after {
+  content: "";
+  display: block;
+  height: 10px; /* Height of the space */
+}
+
+.tools table {
+    border-collapse: collapse; 
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Centered contact me*/
+.contact-me {
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+/*sections hover*/
+.project{
+  transition: color 0.3s ease;;
+}
+.project:hover{
+  color: hsl(124, 100%, 50%) ;
+}
+.summary{
+  transition: color 0.3s ease;;
+}
+.summary:hover{
+  color: hsl(124, 100%, 50%) ;
+}
+.profile{
+  transition: color 0.3s ease;;
+}
+.profile:hover{
+  color: hsl(124, 100%, 50%) ;
+}
+
+#head{
+  transition: color 0.3s ease;;
+}
+#head:hover{
+  color: hsl(124, 100%, 50%);
+}
+
+.edu{
+  transition: color 0.3s ease;;
+}
+.edu:hover{
+  color: hsl(124, 100%, 50%) ;
+}
+
+.acc{
+  transition: color 0.3s ease;;
+}
+.acc:hover{
+  color: hsl(124, 100%, 50%) ;
+}
+
+.xp{
+  transition: color 0.3s ease;;
+}
+.xp:hover{
+  color: hsl(124, 100%, 50%) ;
+}
+
+.technologies{
+  transition: color 0.3s ease;;
+}
+.technologies:hover{
+  color: hsl(124, 100%, 50%) ;
+}
+
+.tools{
+  transition: color 0.3s ease;;
+}
+.tools:hover{
+  color: hsl(124, 100%, 50%) ;
+}
+
+.other-skills{
+  transition: color 0.3s ease;;
+}
+.other-skills:hover{
+  color: hsl(124, 100%, 50%) ;
+}
+
+.contact-me{
+  transition: color 0.3s ease;;
+}
+.contact-me:hover{
+  color: hsl(124, 100%, 50%) ;
+}
+.footer{
+  transition: color 0.3s ease;;
+}
+.footer{
+  color: hsl(124, 100%, 50%) ;
+}
+
+
+@media only screen and (max-width: 600px) {
+  header {
+      height: auto; /* Adjust height for smaller screens */
+      padding: 20px; /* Add padding for smaller screens */
+  }
+}

@@ -4,80 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talabiou Hakim Diallo's CV</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link  href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="profile">
 <!--Added headshot-->
-        <img src="Tala.jpeg" alt="Headshot" width="200" height="200">
-        <h1>
+        <img id="head" src="Tala.jpeg" alt="Headshot" >
+        <h1 id="name">
             Talabiou H. Diallo
         </h1>
-        <p>
-            IT Consultant
-        </p>
+    
 <!--Added necessary hyperlinks-->
-        <p>
+        <p id="web">
             <a href="mailto:hakimdiallo26@icloud.com">hakimdiallo26@icloud.com</a>
-            | <a href="https:www.linkedin.com/in/thd-link/">LinkedIn</a>
-            | <a href="https://github.com/Taladhak">Github</a>
+        |   <a href="https:www.linkedin.com/in/thd-link/">LinkedIn</a>
+        |   <a href="https://github.com/Taladhak">Github</a>
         </p>
 
     </header>
 
+    <section class="summary">
+        <hr>
+        <h2>Summary</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut mollitia vel rerum sed placeat quas beatae eum suscipit. Beatae magni soluta mollitia officiis amet veritatis natus, a consequuntur libero laborum!
+        </p>
+    </section>
+
 <!--Section represents education-->
-    <section>
+    <section class="edu">
         <hr>
         <h2>Education</h2>
-        <ol>
+        
+        <ul>
             <li>
-                Masters of Science, Information Systems Technology |The George Washington University, School of Business |Washington, D.C.
+                Masters of Science, Information Systems Technology | The George Washington University, School of Business | Washington, D.C.
             </li>
             <li>
-                Management of Technology and Innovations Certificate | GWU
+                Management of Technology and Innovations Certificate | The George Washington University, School of Business | Washington, D.C.
             </li>
             <li>
                 Bachelor of Science, International Business | Rosemont College | Rosemont, PA
             </li>
-        </ol>
-        <h3>Certifications</h3>
-        <ul>
-            <li>
-                Effective Communications and Human Relations - Dale Carnegie Training
-            </li>
-            <li>
-                Hands On Essentials - Data Applications & Data Warehouse - Snowflake
-            </li>
-            <li>
-                Blockchain Gold Badge Learning Completion & Core Consulting - Ernst & Young
-            </li>
         </ul>
+        <table>
+<!--Created a header for the Certification and added a year-->
+            <thead>
+                <tr>
+                    <th>
+                        Certification
+                    </th>
+                    <th></th>
+                    <th></th>
+                    <th>
+                        YEAR
+                    </th>
+                </tr>
+            </thead>
+<!--Added Content needed into the cells -->
+            <tbody>
+                <tr>
+                    <td>
+                        Effective Communications and Human Relations - Dale Carnegie Training
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        2021
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hands On Essentials - Data Applications & Data Warehouse - Snowflake
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        2022
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Blockchain Gold Badge Learning Completion & Core Consulting - Ernst & Young
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        2023
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
 <!--Section represents Accomplishments profile-->
-    <section>
+    <section class="acc">
         <hr>
         <h2>Accomplishments</h2>
+        
         <p>
             <ul>
                 <li>
-                    Collaborated with the client with the technical design, historical data conversion, application build, and implementation of the
+                    Collaborated with the client for the technical design, historical data conversion, application build, and implementation of a
                     OneStream platform across the business, and within 5 months, the project transformed into an end-to-end OneStream design,
                     build, and implementation project and upon successful execution, the MSOW of the build and deployment was valued at $6.5M.
                 </li>
+<br>
                 <li>
                     Worked on the Profit Reporting Systems by updating and validating calculation scripts and running unit testing for the calculation
                     scripts, participated with clients/teams to identify findings and investigate open questions on design and requirements and areas
                     of improvement; within 2 months, the system was built with calculation scripts aligned with 3 new business being updated.
                 </li>
+<br>
                 <li>
                     Joined a Hackathon and helped a nonprofit based in San Antonio intending to develop a useful app to satisfy the users and created
                     a new use case for NFT by implementing donation logistics to create transparency resulting in Feed Our World (FOW) ranked 2nd
                     and winning $15,000 in the Web3athon presented by CoinDesk and CRADL.
                 </li>
+<br>
                 <li>
                     Joined an Accelerator and created a milestone form towards funding of $80,000, and within 2 months, Feed Our World had a
                     functional MVP with 30 users and was nominated as the recipient of the Impact Award for the Accelerator.
                 </li>
+<br>
                 <li>
                     Ranked top 50% in the 2021 GW New Venture Competition (3rd third largest collegiate innovation Competition of 2021) against
                     400+ students, PhDs, and faculty, and was awarded access to SEED SPOT 2-day launch camp.
@@ -87,16 +139,18 @@
     </section>
 
 <!-- Section represent profile experience-->
-    <section>
+    <section class="xp">
         <hr>
         <h2>Experience</h2>
-        <h3>Technology Consultant | Ernst & Young (EY) | McClean, VA Mar 2022 - Jun 2023</h3>
+        
+        <h4>Technology Consultant | Ernst & Young (EY) | McClean, VA Mar 2022 - Jun 2023</h4>
         <p>
             <ul>
                 <li>
                     Aided client in consolidating financial data from multiple sources due to their many acquisitions and disparate financial systems,
                     leading to inefficiencies and delays in their close process, and led the transformation of the Client's CC&R processes and systems.
                 </li>
+                <br>
                 <li>
                     Consulted in an internal project by building docker containers and connecting these containers through FASTAPIs, assisted in the
                     research and connectivity of AI tools with Microsoft Azure, and the project is still ongoing, and goals are being achieved.
@@ -104,17 +158,19 @@
             </ul>
         </p>
 
-        <h3>Project Manager | Feed Our World | Denver, CO Jun 2022 - Jun 2023</h3>
+        <h4>Project Manager | Feed Our World | Denver, CO Jun 2022 - Jun 2023</h4>
         <p>
             <ul>
                 <li>
                     Collaborated with a diverse team and built a dApp on the Celo Blockchain, which minimized transaction fees between local farmers
                     and consumers, using smart contracts that allocate a part of the fees as a donation to food banks.
                 </li>
+                <br>
                 <li>
                     Selected as one of 33 teams worldwide from a pool of 300 for an exclusive 8-week CELO Camp (Batch 7) and completed the program
                     from April 20th to June 16th, gaining invaluable experience and expanding professional networks.
                 </li>
+                <br>
                 <li>
                     Rebuilt the app and website, launched a functional MVP for our customers, and led a talented technical team collaborating with
                     global startups and renowned blockchain MNCs.
@@ -122,17 +178,19 @@
             </ul>
         </p>
 
-        <h3>Founder | Liberlight | Washinton, D.C. Jan 2021 - Mar 2022</h3>
+        <h4>Founder | Liberlight | Washinton, D.C. Jan 2021 - Mar 2022</h4>
         <p>
             <ul>
                 <li>
                     CLaunched a startup that powered energy-burdened people with the habits, knowledge, and incentives to become energy efficient
                     and conducted customer discovery interviews of 100+ targeted potential customers to understand their pain points.
                 </li>
+                <br>
                 <li>
                     Analyzed data gathered by the team during the "get out of the building" phase to formulate new hypotheses and improve BMC
                     and developed an MVP called Liberlight.
                 </li>
+                <br>
                 <li>
                     Led a team of 4 students and eight teams at the 2021 GWU Hackathon: Innovate the Future of the Built Environment after
                     identifying issues and providing solutions to SDG7 problems.
@@ -141,17 +199,203 @@
         </p>
     </section>
 
-<!--Area of expertise is represented as a sidebar-->
-    <aside>
-        <hr>
-        <h2>Area of Expertise</h2>
-        <p><b>Technical Consulting, Entrepreneurship, Team Leadership, Communications, Finance, IT/IS Strategy, Data Analysis, Customer
-            Service, Programming, Coding, Project Management, MySQL, SQL, Extract, Transform, Load, Data Structures,
-            Data Warehouse,Excel, Blockchain, Product Design, Business Models, Operations Management, Quality Control, Team Building</b></p>
-    </aside>
+    <section class="project">
+            <hr>
+            <h2>Projects</h2>
+            
+            <h4>Working In Progress!</h4>
+            <p>
+                Stay Tuned 
+            </p>
+    </section>
+<hr>
+    <!-- Technologies Section -->
+    <section class="technologies">
+        <h2>Technologies</h2>
+        <div class="tech1">
+            <h3>Web Development</h3>
+            <ul>
+                <li>
+                    HTML & CSS
+                </li>
+                <li>
+                    Python
+                </li>
+            </ul>
+        </div>
+        <div class="tech1">
+            <h3>Database</h3>
+            <ul>
+                <li>
+                    SQL
+                </li>
+                <li>
+                    MySQL
+                </li>
+                <li>
+                    Snowflake
+                </li>
+            </ul>
+        </div>
+        <div class="tech1">
+            <h3>Testing</h3>
+            <ul>
+                <li>
+                
+                </li>
+            </ul>
+        </div>
+        <div class="tech1">
+            <h3>Other</h3>
+            <ul>
+                <li>
+                    Solidity
+                </li>
+                <li>
+                    Git & Github
+                </li>
+                <li>
+                    Excel
+                </li>
+            </ul>
+        </div>
+    </section>
+<hr>
+    <!-- Tools Section -->
+    <section class="tools">
+        <h2>Tools</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tool</th>
+                    <th>Description</th>
+                    <th>Proficiency</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr class="space">
+                    <td>
+                        Visual Studio Code
+                    </td>
+                    <td>
+                        Microsoft's free, powerful, and extensible code editor
+                    </td>
+                    <td>
+                        Intermediate
+                    </td>
+                </tr>
 
-    <footer>
-    
+                <tr>
+                    <td>
+                        Anaconda
+                    </td>
+                    <td>
+                        Comprehensive data science platform with Python and R
+                    </td>
+                    <td>
+                        Beginner
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        slack
+                    </td>
+                    <td>
+                        Streamlined communication tool for efficient team collaboration
+                    </td>
+                    <td>
+                        Intermediate
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Notion
+                    </td>
+                    <td>
+                        All-in-one workspace for notes, tasks, and projects
+                    </td>
+                    <td>
+                        Intermediate
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Asana
+                    </td>
+                    <td>
+                        Task and project management tool for teams
+                    </td>
+                    <td>
+                        Intermediate
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Atom
+                    </td>
+                    <td>
+                        Customizable text editor for developers with integrated Git
+                    </td>
+                    <td>
+                        Intermediate
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+<hr>
+    <section class="other-skills">
+        <h2>Other Skills</h2>
+        <p>
+            Technical Consulting, Entrepreneurship, Team Leadership, Communications, Finance, IT/IS Strategy, Data Analysis, Customer
+            Service, Project Management, Product Design, Business Models, Operations Management, Quality Control, Team Building
+        </p>
+    </section>
+
+
+<hr>
+    <section class="contact-me">
+<!--Beginning of the contact form-->
+        <form action="#">
+            <h2>Contact Me</h2>
+        
+    <!--Form fields start including labels and inputs-->       
+            <label for="Name">NAME
+                <input type="text" name="NAME" placeholder="Type your name" required>
+            </label>
+            <br>
+            <label for="Email">EMAIL
+                <input type="email" name="EMAIL" placeholder="Type your email" required>
+            </label>
+            <br>
+    <!--Added a dropdown select option-->
+            <label for="contactReason">REASON FOR CONTACT:</label>
+            <select name="contactReason" id="contactReason">
+                <option value="" disabled selected>Select a reason</option>
+                <option value="Job offer">Job Offer</option>
+                <option value="Collaboration">Collaboration</option>
+                <option value="Feedback">Feedback</option>
+            </select>
+            <br>
+
+            <label for="Other">MESSAGE
+                <textarea name="biography" cols="15" rows="3"></textarea>
+            </label>
+            <br>
+    <!--Submit button element to send information to server-->
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+<hr>
+    <footer class="footer">
+        <p>The Springboard Journey with Tala</p>
     </footer>
 </body>
 </html>
