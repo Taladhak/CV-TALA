@@ -288,7 +288,7 @@ align-items: center;
 .footer{
   transition: color 0.3s ease;;
 }
-.footer{
+.footer:hover{
   color: hsl(124, 100%, 50%) ;
 }
 
