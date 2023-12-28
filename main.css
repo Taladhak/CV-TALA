@@ -11,6 +11,7 @@ h4, th{
     font-size: 20px;
 
 }
+/* Header Styles*/
 header {
   display: flex;
   flex-direction: column;
@@ -32,6 +33,11 @@ header {
   width: 250px; 
   height: 250px; 
   object-fit: cover; /* Ensured the image covers the area without issues */
+}
+
+/* Added spacing between listed items in UL*/
+ul li {
+  margin-bottom: 10px; 
 }
 
 #name {
@@ -106,12 +112,6 @@ p {
     margin-bottom: 10px;
     border: dashed 1px;
     border-color: hsl(190, 100%, 50%); 
-    background-color: black;
-    color:hsl(190, 100%, 50%);
-  }
-  label>input, select{
-    margin-bottom: 10px;
-    border: dashed 1px;
     background-color: black;
     color:hsl(190, 100%, 50%);
   }
@@ -290,6 +290,20 @@ align-items: center;
 }
 .footer:hover{
   color: hsl(124, 100%, 50%) ;
+}
+
+#web a img {
+  max-width: 30px; /* Maximum width for the logos */
+  max-height: 30px; /* Maximum height for the logos */
+  margin: 0 5px; /* Space around each logo */
+  vertical-align: middle; /* Align logos with middle of text line */
+  
+}
+
+#web a:hover img {
+  opacity: 0.8; /* Slight transparency on hover */
+  filter: invert(48%) sepia(93%) saturate(1352%) hue-rotate(88deg) brightness(119%) contrast(100%);
+
 }
 
 
